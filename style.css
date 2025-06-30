@@ -1,0 +1,61 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+#game-container {
+    display: flex;
+    border: 2px solid #333;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+#tetris-board {
+    border-right: 2px solid #333;
+    background-color: #e0e0e0; /* Light gray background for the board itself */
+}
+
+#info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px; /* Give some width to the info panel */
+}
+
+#info h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+#score {
+    font-weight: bold;
+    color: #d9534f; /* A reddish color for score */
+}
+
+#start-button {
+    padding: 10px 15px;
+    font-size: 1em;
+    color: white;
+    background-color: #5cb85c; /* Green color for start button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#start-button:hover {
+    background-color: #4cae4c; /* Darker green on hover */
+}
+
+/* Styling for the blocks (will be applied via JavaScript fillStyle) */
+canvas {
+    /* Add a subtle border to the canvas itself to distinguish from info panel clearly */
+    border: 1px solid #ccc;
+}
